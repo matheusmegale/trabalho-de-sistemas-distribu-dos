@@ -174,7 +174,6 @@ recomendador/
 ## 🛡️ Segurança
 
 * Uso de `.env` para proteger chaves sensíveis;
-* Header interno `X-Internal-Token` entre containers;
 * Rede privada com controle de acesso entre agentes;
 * Volume compartilhado com escopo restrito.
 
