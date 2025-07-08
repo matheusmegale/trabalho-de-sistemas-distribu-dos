@@ -1,60 +1,73 @@
-# Ambientes virtuais
-.venv/
-venv/
-
-# IDEs (PyCharm, VSCode, etc)
-.idea/
-.vscode/
-
-# Arquivos Python compilados
+# ----------------------
+# Python
+# ----------------------
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-
-# Arquivos de log e banco local
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 *.log
-*.sqlite
-*.sqlite3
+
+# Virtualenv
+venv/
+.env/
+.envrc
+
+# ----------------------
+# PyCharm
+# ----------------------
+.idea/
+
+# ----------------------
+# Flask & JSONs temporários
+# ----------------------
+instance/
 *.db
+*.sqlite3
+*.json
+*.csv
 
-# Arquivos e pastas sensíveis
-.env
-*.env
-.env.*
-
-# Modelos de IA locais
-*.bin
-*.ckpt
-*.h5
-*.pt
-*.model
-*.onnx
-*.tflite
-recomendador/classificador/modelo/
-
-# Dados do usuário
+# Arquivos temporários de preferências
 recomendador/gateway_api/preferencias/
 
-# Arquivos temporários e do sistema
-*.tmp
-*.bak
-*.swp
+# ----------------------
+# IA / Ollama / Modelos locais
+# ----------------------
+*.bin
+*.gguf
+*.onnx
+*.pth
+ollama_data/
+*.ckpt
+*.tflite
+*.model
+*.weights
+*.pt
+
+# ----------------------
+# Node/Tailwind (se usar)
+# ----------------------
+node_modules/
+package-lock.json
+
+# ----------------------
+# Docker
+# ----------------------
+*.pid
+*.pid.lock
+docker-compose.override.yml
+
+# ----------------------
+# Logs
+# ----------------------
+*.log
+
+# ----------------------
+# Arquivos de sistema
+# ----------------------
 .DS_Store
 Thumbs.db
-
-# Testes e cobertura
-htmlcov/
-.tox/
-.coverage
-.pytest_cache/
-
-# Arquivos de lock de dependência
-Pipfile.lock
-poetry.lock
-
-# Docker (se usar volumes locais ou build cache)
-**/__pycache__/
-**/tmp/
-**/build/
-**/.docker-cache/
