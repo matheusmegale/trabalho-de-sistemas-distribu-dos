@@ -1,34 +1,32 @@
-from flask import Flask, request, jsonify
-import json
+import openai
+import os
 
-app = Flask(__name__)
+# Token da OpenAI (evite deixar público no código real!)
+openai.api_key = "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"
 
-# Carrega a base de recomendações
-with open("base_regras.json", encoding="utf-8") as f:
-    base = json.load(f)
+def gerar_recomendacoes_ia(perfil, preferencia):
+    prompt = f"""
+Você é um sistema recomendador cultural. Com base no perfil cultural '{perfil}' de um usuário, recomende 3 obras de {preferencia} personalizadas. 
 
-@app.route("/recomendar", methods=["POST"])
-def recomendar():
-    dados = request.json
+Formato da resposta:
+[
+  {{
+    "titulo": "...",
+    "tipo": "filme" ou "livro",
+    "genero": "...",
+    "motivo": "..."
+  }},
+  ...
+]
+"""
 
-    perfil = dados.get("perfil")
-    preferencia = dados.get("preferencia", "ambos")
-
-    if perfil not in base:
-        return jsonify({"erro": f"Perfil '{perfil}' não encontrado."}), 404
-
-    recomendacoes = {}
-
-    if preferencia == "filme" or preferencia == "ambos":
-        recomendacoes["filmes"] = base[perfil].get("filmes", [])
-
-    if preferencia == "livro" or preferencia == "ambos":
-        recomendacoes["livros"] = base[perfil].get("livros", [])
-
-    return jsonify({
-        "perfil": perfil,
-        "recomendacoes": recomendacoes
-    })
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5002)
+    try:
+        resposta = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+        )
+        conteudo = resposta.choices[0].message.content.strip()
+        return conteudo
+    except Exception as e:
+        return f"Erro na OpenAI: {e}"

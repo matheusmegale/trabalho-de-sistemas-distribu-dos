@@ -12,18 +12,12 @@ def classificar_usuario(preferencias: dict) -> str:
     generos = preferencias.get("generos", [])
 
     prompt = (
-        "Você é um classificador de perfis culturais de usuários. Sua tarefa é gerar um rótulo único e específico com base nas preferências da pessoa.\n\n"
+        "Você é um classificador de perfis culturais de usuários. Sua tarefa é gerar um rótulo único com base nas preferências da pessoa.\n\n"
         "O rótulo deve obrigatoriamente seguir o padrão:\n"
-        "<nível>_<tipo>_<gênero>\n\n"
+        "<tipo>_<gênero>\n\n"
         "Onde:\n"
-        "- <nível>: iniciante, curioso, fã, experiente, veterano\n"
         "- <tipo>: cinefilo, leitor, misto\n"
         "- <gênero>: um gênero principal extraído da lista de gêneros favoritos (ex: acao, comedia, fantasia, romance, suspense, terror, etc)\n\n"
-        "Exemplos válidos de rótulos:\n"
-        "- iniciante_cinefilo_acao\n"
-        "- curioso_leitor_fantasia\n"
-        "- fa_misto_comedia\n"
-        "- veterano_cinefilo_terror\n\n"
         "Regras:\n"
         "- Escolha apenas 1 gênero principal com base nos favoritos\n"
         "- Use 'misto' apenas se a pessoa consome livros e filmes\n"
