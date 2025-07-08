@@ -1,0 +1,3 @@
+flask
+langchain
+gpt4all
