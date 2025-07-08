@@ -70,9 +70,9 @@ Após o envio, o sistema classifica o perfil automaticamente e exibe 10 recomend
 
 Ver documentos:
 
-[Visão Final Após Implementação das Medidas de Mitigação.pdf](https://github.com/user-attachments/files/21132115/Visao.Final.Apos.Implementacao.das.Medidas.de.Mitigacao.pdf)
-
 [Visão Inicial Pré-Modelagem de Ameaças.pdf](https://github.com/user-attachments/files/21132117/Visao.Inicial.Pre-Modelagem.de.Ameacas.pdf)
+
+[Visão Final Após Implementação das Medidas de Mitigação.pdf](https://github.com/user-attachments/files/21132210/Visao.Final.Apos.Implementacao.das.Medidas.de.Mitigacao.pdf)
 
 ---
 
