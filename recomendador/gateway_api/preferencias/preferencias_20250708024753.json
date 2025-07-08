@@ -1,0 +1,11 @@
+{
+  "nome": "Jota Junior",
+  "idade": "13",
+  "preferencia": "ambos",
+  "generos": [
+    "Ação",
+    "anime",
+    "comédia",
+    "aventura"
+  ]
+}

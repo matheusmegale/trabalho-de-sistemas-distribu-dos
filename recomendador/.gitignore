@@ -1,9 +1,60 @@
-__pycache__/
-*.pyc
-*.pkl
-*.env
-.env/
+# Ambientes virtuais
+.venv/
 venv/
+
+# IDEs (PyCharm, VSCode, etc)
+.idea/
+.vscode/
+
+# Arquivos Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Arquivos de log e banco local
 *.log
 *.sqlite
+*.sqlite3
 *.db
+
+# Arquivos e pastas sensíveis
+.env
+*.env
+.env.*
+
+# Modelos de IA locais
+*.bin
+*.ckpt
+*.h5
+*.pt
+*.model
+*.onnx
+*.tflite
+recomendador/classificador/modelo/
+
+# Dados do usuário
+recomendador/gateway_api/preferencias/
+
+# Arquivos temporários e do sistema
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Testes e cobertura
+htmlcov/
+.tox/
+.coverage
+.pytest_cache/
+
+# Arquivos de lock de dependência
+Pipfile.lock
+poetry.lock
+
+# Docker (se usar volumes locais ou build cache)
+**/__pycache__/
+**/tmp/
+**/build/
+**/.docker-cache/

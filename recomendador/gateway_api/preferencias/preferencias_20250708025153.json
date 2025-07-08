@@ -1,0 +1,10 @@
+{
+  "nome": "asda fasef",
+  "idade": "18",
+  "preferencia": "livros",
+  "generos": [
+    "Romance",
+    "comédia",
+    "aventura"
+  ]
+}
