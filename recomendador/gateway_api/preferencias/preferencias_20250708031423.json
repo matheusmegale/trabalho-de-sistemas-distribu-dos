@@ -1,0 +1,11 @@
+{
+  "nome": "Ruan Fonseca",
+  "idade": "22",
+  "preferencia": "filmes",
+  "generos": [
+    "Ação",
+    "anime",
+    "comédia",
+    "aventura"
+  ]
+}
