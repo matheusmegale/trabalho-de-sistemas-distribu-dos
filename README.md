@@ -16,19 +16,15 @@ Toda a comunicação é feita via chamadas HTTP, com autenticação entre os age
 
 ---
 
+## 🎯 Dor (Problema Central)
+
+Em um mundo com acesso ilimitado a filmes, séries e livros digitais, os usuários frequentemente se deparam com a chamada “paralisia por excesso de escolha”. Com milhares de títulos disponíveis em plataformas de streaming e catálogos online, muitos usuários gastam mais tempo tentando decidir o que consumir do que realmente aproveitando o conteúdo. Isso causa frustração, fadiga decisória e até abandono da experiência. Outro fator agravante é que os sistemas de recomendação atuais, mesmo sofisticados, tendem a se basear exclusivamente em dados comportamentais passados (como cliques, histórico de visualizações ou compras), sem considerar **as preferências declaradas pelo próprio usuário**. Isso limita a capacidade de entregar sugestões realmente significativas. A dor está em não se sentir compreendido ou representado pelas recomendações recebidas, o que compromete o engajamento e reduz o valor percebido das plataformas de conteúdo.
+
+---
+
 ## 🧠 Validação do Problema
 
-### Relevância do problema abordado
-
-A sobrecarga de conteúdo digital dificulta a escolha de livros e filmes alinhados ao gosto do usuário. Muitos sistemas de recomendação existentes utilizam apenas histórico de navegação, sem considerar preferências declaradas de forma personalizada.
-
-Este projeto busca resolver essa dor combinando:
-
-- Um formulário intuitivo de preferências culturais;
-- Classificação de perfil com IA local (LLM);
-- Recomendações geradas com base no perfil detectado.
-
-Segundo dados da [Nielsen](https://www.nielsen.com/insights/2023/data-driven-personalization-2023-state-of-play-report/), 66% dos usuários desistem de consumir conteúdo por excesso de opções. Além disso, estudos acadêmicos demonstram que sistemas de recomendação personalizados aumentam o engajamento em até 47% (Silva et al., 2022).
+O problema da sobrecarga de conteúdo não é apenas percebido empiricamente; ele é confirmado por dados. Segundo o relatório da [Nielsen (2023)](https://www.nielsen.com/insights/2023/data-driven-personalization-2023-state-of-play-report/), **66% dos usuários desistem de consumir conteúdo digital por não conseguirem escolher o que assistir ou ler**. Isso revela um déficit claro de personalização inteligente nas plataformas. Além disso, pesquisas acadêmicas, como o estudo de Silva et al. (2022), apontam que o uso de recomendação personalizada com base em perfis declarados pode aumentar o engajamento em até **47%**. O projeto propõe resolver essa lacuna por meio de um sistema distribuído e modular que permite capturar preferências declaradas via formulário, processá-las com um classificador inteligente e gerar recomendações sob medida. Esse fluxo visa restaurar a confiança do usuário na recomendação automatizada, entregando valor real com base no que ele realmente gosta — e não apenas no que ele consumiu no passado.
 
 ### Interface de Coleta de Preferências
 
@@ -36,15 +32,6 @@ A tela abaixo exemplifica o formulário utilizado para entender os gostos do usu
 
 ![image](https://github.com/user-attachments/assets/13a7a731-3365-440c-9a2d-8f18e9335e73)
 
-### Documentação da "dor" a ser resolvida
-
-O sistema visa resolver:
-
-- A dificuldade dos usuários em encontrar conteúdo relevante de forma rápida;
-- A falta de personalização de sistemas tradicionais;
-- A ausência de soluções com uso de IA local, que respeitem privacidade.
-
-Com isso, o projeto entrega uma experiência adaptativa e confiável mesmo em contextos com acesso restrito à internet ou onde privacidade é essencial.
 
 ## 🎬 Exemplo de Funcionamento
 
