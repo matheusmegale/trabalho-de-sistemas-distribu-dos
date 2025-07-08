@@ -14,7 +14,7 @@ def carregar_base(caminho):
         return {}
 
 base = carregar_base("base_regras.json")
-
+# # #
 def gerar_recomendacoes(perfil, preferencia):
     recomendacoes = {}
     if preferencia in ["filme", "ambos"]:
