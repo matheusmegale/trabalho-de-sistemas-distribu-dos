@@ -14,7 +14,7 @@ build/
 
 # Virtualenv
 venv/
-.env/
+.env
 .envrc
 
 # ----------------------

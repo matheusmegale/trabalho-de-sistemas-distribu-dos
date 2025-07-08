@@ -1,0 +1,26 @@
+services:
+  gateway_api:
+    build: ./gateway_api
+    ports:
+      - "5000:5000"
+    networks:
+      - recomendador-net
+    depends_on:
+      - classificador
+      - recomendador
+
+  classificador:
+    build: ./classificador
+    networks:
+      - recomendador-net
+
+  recomendador:
+    build: ./recomendador
+    env_file:
+      - ./.env
+    networks:
+      - recomendador-net
+
+networks:
+  recomendador-net:
+    driver: bridge
