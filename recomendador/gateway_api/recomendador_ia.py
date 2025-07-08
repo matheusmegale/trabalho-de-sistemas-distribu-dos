@@ -1,8 +1,10 @@
 import requests
 import json
+import os
 
 # 🔐 Chave de API da OpenAI
-API_KEY = "OPENAI_API_KEY"
+API_KEY = os.getenv("OPENAI_API_KEY", "chave_nao_encontrada")
+
 API_URL = "https://api.openai.com/v1/chat/completions"
 MODEL = "gpt-4o-mini"
 

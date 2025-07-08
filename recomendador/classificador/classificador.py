@@ -2,7 +2,7 @@ import requests
 import os
 import json
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
+OLLAMA_URL = "http://host.docker.internal:11434/api/chat"
 MODEL_NAME = "mistral"
 
 def classificar_usuario(preferencias: dict) -> str:
@@ -49,7 +49,8 @@ def classificar_usuario(preferencias: dict) -> str:
         return "erro_classificacao"
 
 def classificar_ultima_entrada() -> str:
-    caminho_pasta = os.path.join("..", "gateway_api", "preferencias")
+    caminho_pasta = "/shared/preferencias"
+
     arquivos = [f for f in os.listdir(caminho_pasta) if f.endswith(".json")]
     if not arquivos:
         return "nenhum_arquivo_encontrado"

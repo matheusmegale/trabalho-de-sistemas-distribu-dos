@@ -1,26 +1,33 @@
-services:
-  gateway_api:
-    build: ./gateway_api
-    ports:
-      - "5000:5000"
-    networks:
-      - recomendador-net
-    depends_on:
-      - classificador
-      - recomendador
+version: "3.8"
 
+services:
   classificador:
     build: ./classificador
-    networks:
-      - recomendador-net
+    container_name: classificador
+    ports:
+      - "5001:5001"
+    volumes:
+      - shared_data:/shared
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+    restart: always
 
-  recomendador:
-    build: ./recomendador
+  gateway_api:
+    build: ./gateway_api
+    container_name: gateway_api
+    ports:
+      - "5000:5000"
+    volumes:
+      - shared_data:/shared
+    depends_on:
+      - classificador
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=main.py
     env_file:
-      - ./.env
-    networks:
-      - recomendador-net
+      - .env
+    restart: always
 
-networks:
-  recomendador-net:
-    driver: bridge
+volumes:
+  shared_data:

@@ -7,8 +7,8 @@ from recomendador_ia import gerar_recomendacoes
 
 app = Flask(__name__)
 
-PASTA_PREFERENCIAS = 'preferencias'
-CLASSIFICADOR_URL = "http://localhost:5001"  # Certifique-se que o classificador (Ollama) está rodando
+PASTA_PREFERENCIAS = '/shared/preferencias'
+CLASSIFICADOR_URL = "http://classificador:5001"
 
 @app.route('/')
 def index():

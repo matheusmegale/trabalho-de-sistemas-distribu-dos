@@ -15,14 +15,14 @@ def classificar():
 
     # Salva o resultado classificado
     os.makedirs("classificador", exist_ok=True)
-    with open("classificador/resultado_classificacao.json", "w", encoding="utf-8") as f:
+    with open("/shared/classificador/resultado_classificacao.json", "w", encoding="utf-8") as f:
         json.dump({"perfil": perfil}, f, ensure_ascii=False, indent=2)
 
     return jsonify({"perfil": perfil})
 
 @app.route("/perfil", methods=["GET"])
 def obter_perfil_classificado():
-    caminho = "classificador/resultado_classificacao.json"
+    caminho = "/shared/classificador/resultado_classificacao.json"
     if os.path.exists(caminho):
         with open(caminho, "r", encoding="utf-8") as f:
             dados = json.load(f)
