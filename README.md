@@ -28,7 +28,7 @@ Este projeto busca resolver essa dor combinando:
 - Classificação de perfil com IA local (LLM);
 - Recomendações geradas com base no perfil detectado.
 
-Segundo dados da [Nielsen](https://www.nielsen.com/us/en/insights/report/2023/the-era-of-choice/), 66% dos usuários desistem de consumir conteúdo por excesso de opções. Além disso, estudos acadêmicos demonstram que sistemas de recomendação personalizados aumentam o engajamento em até 47% (Silva et al., 2022).
+Segundo dados da [Nielsen](https://www.nielsen.com/insights/2023/data-driven-personalization-2023-state-of-play-report/), 66% dos usuários desistem de consumir conteúdo por excesso de opções. Além disso, estudos acadêmicos demonstram que sistemas de recomendação personalizados aumentam o engajamento em até 47% (Silva et al., 2022).
 
 ### Interface de Coleta de Preferências
 
@@ -70,7 +70,9 @@ Após o envio, o sistema classifica o perfil automaticamente e exibe 10 recomend
 
 Ver documentos:
 
-COLOCAR OS DOCUMENTOS AQUI
+[Visão Final Após Implementação das Medidas de Mitigação.pdf](https://github.com/user-attachments/files/21132115/Visao.Final.Apos.Implementacao.das.Medidas.de.Mitigacao.pdf)
+
+[Visão Inicial Pré-Modelagem de Ameaças.pdf](https://github.com/user-attachments/files/21132117/Visao.Inicial.Pre-Modelagem.de.Ameacas.pdf)
 
 ---
 
@@ -203,8 +205,8 @@ recomendador/
 
 ## 👨‍💻 Desenvolvido por
 
-Eduardo Ruan Guimarães Fonseca – Sistemas de Informação – UFLA
-Izac Moreira Souza Junior – Sistemas de Informação – UFLA
-Matheus de Paula Megale – Sistemas de Informação – UFLA
-Nadson Souza Matos  – Sistemas de Informação – UFLA
+* Eduardo Ruan Guimarães Fonseca – Sistemas de Informação – UFLA
+* Izac Moreira Souza Junior – Sistemas de Informação – UFLA
+* Matheus de Paula Megale – Sistemas de Informação – UFLA
+* Nadson Souza Matos  – Sistemas de Informação – UFLA
 
