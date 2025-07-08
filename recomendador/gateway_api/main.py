@@ -5,7 +5,7 @@ import requests
 from datetime import datetime
 from recomendador_ia import gerar_recomendacoes
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Caminho no volume compartilhado Docker
 PASTA_PREFERENCIAS = '/shared/preferencias'
@@ -65,11 +65,11 @@ def salvar_preferencias():
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
-        body {
+        body {{
             font-family: 'Poppins', sans-serif;
             background-color: #0f172a;
             color: #e2e8f0;
-        }
+        }}
     </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-6">
@@ -95,5 +95,5 @@ def salvar_preferencias():
 </html>
 
     """
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True, port=5000)

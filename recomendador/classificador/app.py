@@ -13,12 +13,15 @@ def home():
 def classificar():
     perfil = classificar_ultima_entrada()
 
+    # Garante que a pasta exista
+    os.makedirs("/shared/classificador", exist_ok=True)
+
     # Salva o resultado classificado
-    os.makedirs("classificador", exist_ok=True)
     with open("/shared/classificador/resultado_classificacao.json", "w", encoding="utf-8") as f:
         json.dump({"perfil": perfil}, f, ensure_ascii=False, indent=2)
 
     return jsonify({"perfil": perfil})
+
 
 @app.route("/perfil", methods=["GET"])
 def obter_perfil_classificado():
