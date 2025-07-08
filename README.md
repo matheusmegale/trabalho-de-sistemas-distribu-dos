@@ -46,6 +46,24 @@ O sistema visa resolver:
 
 Com isso, o projeto entrega uma experiência adaptativa e confiável mesmo em contextos com acesso restrito à internet ou onde privacidade é essencial.
 
+## 🎬 Exemplo de Funcionamento
+
+O sistema “Recomendador Cultural com Agentes Inteligentes” coleta preferências culturais do usuário por meio de uma interface web simples e responsiva, e entrega recomendações personalizadas com base em seu perfil classificado.
+
+### 📝 Preenchimento do Formulário
+
+O usuário informa nome, idade, tipo de mídia preferida (filmes, livros ou ambos) e os gêneros culturais favoritos.
+
+![Captura de tela 2025-07-08 142437](https://github.com/user-attachments/assets/cabfd0a5-30c3-4537-8722-82d4d39c0766)
+
+---
+
+### 🤖 Resultado: Perfil + Recomendações Inteligentes
+
+Após o envio, o sistema classifica o perfil automaticamente e exibe 10 recomendações personalizadas, utilizando IA local (Ollama + Mistral) e a API da OpenAI.
+
+![Captura de tela 2025-07-08 142437](https://github.com/user-attachments/assets/111a46e5-a445-47f4-9def-ada19cb3cf4a)
+
 ---
 
 ## 🧱 Arquitetura
