@@ -54,7 +54,7 @@ O sistema “Recomendador Cultural com Agentes Inteligentes” coleta preferênc
 
 O usuário informa nome, idade, tipo de mídia preferida (filmes, livros ou ambos) e os gêneros culturais favoritos.
 
-![Captura de tela 2025-07-08 142437](https://github.com/user-attachments/assets/cabfd0a5-30c3-4537-8722-82d4d39c0766)
+![Captura de tela 2025-07-08 141233](https://github.com/user-attachments/assets/f3f564a6-7525-48cb-9200-6ddf335b3a04)
 
 ---
 
