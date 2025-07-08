@@ -104,13 +104,13 @@ docker-compose up --build
 
 Esse comando irá:
 
-Criar rede privada entre os containers;
+   • Criar rede privada entre os containers;
 
-Subir Gateway (porta 5000);
+   • Subir Gateway (porta 5000);
 
-Subir Classificador;
+   • Subir Classificador;
 
-Compartilhar arquivos em /shared.
+   • Compartilhar arquivos em /shared.
 
  Acesse `http://localhost:5000` no navegador.
 
@@ -124,7 +124,7 @@ Clique em “Enviar Preferências”;
 
 O sistema irá:
 
-Salvar as preferências como JSON;
+  • Salvar as preferências como JSON;
 
   • Enviar para o Agente Classificador;
 
