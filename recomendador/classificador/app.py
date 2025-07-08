@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from classificador_llm import classificar_ultima_entrada
+from classificador import classificar_ultima_entrada
 import json
 import os
 
