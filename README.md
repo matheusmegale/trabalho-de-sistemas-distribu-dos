@@ -1,3 +1,12 @@
+## 👨‍💻 Desenvolvido por
+
+* Eduardo Ruan Guimarães Fonseca – Sistemas de Informação – UFLA
+* Izac Moreira Souza Junior – Sistemas de Informação – UFLA
+* Matheus de Paula Megale – Sistemas de Informação – UFLA
+* Nadson Souza Matos  – Sistemas de Informação – UFLA
+
+---
+
 # 📚 Recomendador Cultural com Agentes Inteligentes
 
 Sistema distribuído com dois agentes de IA que classificam perfis culturais e geram recomendações de livros e filmes personalizados, com arquitetura segura e modular em Flask + Docker.
@@ -186,13 +195,4 @@ recomendador/
 * OpenAI API Docs – [https://platform.openai.com/docs](https://platform.openai.com/docs)
 * Ollama – [https://ollama.com/](https://ollama.com/)
 * Flask Documentation – [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
-
----
-
-## 👨‍💻 Desenvolvido por
-
-* Eduardo Ruan Guimarães Fonseca – Sistemas de Informação – UFLA
-* Izac Moreira Souza Junior – Sistemas de Informação – UFLA
-* Matheus de Paula Megale – Sistemas de Informação – UFLA
-* Nadson Souza Matos  – Sistemas de Informação – UFLA
 
